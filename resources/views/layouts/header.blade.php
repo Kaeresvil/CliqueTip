@@ -37,7 +37,7 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/chatify">
+                            <a class="dropdown-item" href="/chatroom">
                                 {{ __('Chat Room') }}
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
