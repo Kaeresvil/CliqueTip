@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  height: 90%;
 }
 /*internet connection*/
 .internet-connection {
@@ -838,7 +839,7 @@ div.loadingPlaceholder-date {
   .messenger-infoView {
     position: fixed;
     right: 0;
-    top: 0;
+    top: 10;
     bottom: 0;
     max-width: 334px;
   }
