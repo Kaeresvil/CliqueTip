@@ -14,6 +14,7 @@ class PostManagement extends Model
 
     protected $fillable = [
         'userId',
+        'title',
         'post'
     ];
 }

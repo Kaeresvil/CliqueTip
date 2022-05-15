@@ -31,4 +31,5 @@ Route::get('user', [App\Http\Controllers\HomeController::class, 'index'])->name(
 
 Route::post('/updateProfile', [App\Http\Controllers\HomeController::class, 'updateProfile'])->name('updateProfile');
 
-
+//Route iti search
+Route::get('search', [App\Http\Controllers\PostController::class, 'search'])->name('search');

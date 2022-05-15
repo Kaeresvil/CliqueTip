@@ -14,7 +14,6 @@
                 <ul class="navbar-nav me-auto">
 
                 </ul>
-
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ms-auto">
                     <!-- Authentication Links -->
@@ -32,29 +31,40 @@
                     @endif
                     @else
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }}
-                        </a>
-
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('home')}}">
-                                {{ __('Home') }}
-                            </a>
-                            <a class="dropdown-item" href="/user">
-                                {{ __('User Profile') }}
-                            </a>
-
-                            <a class="dropdown-item" href="/chatroom">
-                                {{ __('Chat Room') }}
-                            </a>
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
+                        <div class="row">
+                            <form action="{{ route('search') }}" method="GET" class="col-10">
+                                <div class="input-group input-group-sm mt-2">
+                                    <div class="input-group-prepend">
+                                        <button class="btn btn-warning" type="submit"><i class="bi bi-search"></i></button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search..." name="searchBar">
+                                </div>
                             </form>
+
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle col-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('home')}}">
+                                    {{ __('Home') }}
+                                </a>
+                                <a class="dropdown-item" href="/user">
+                                    {{ __('User Profile') }}
+                                </a>
+
+                                <a class="dropdown-item" href="/chatroom">
+                                    {{ __('Chat Room') }}
+                                </a>
+                                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
                         </div>
                     </li>
                     <li>
