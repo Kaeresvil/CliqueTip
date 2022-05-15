@@ -3,7 +3,7 @@
     <div class="container">
         <img src="{{asset('images/cliquetip-logo.png')}}" width="60" height="70" alt="CliqueTip Logo">
         <a class="navbar-brand" href="{{ url('/home') }}">
-            {{ config('app.name', 'CliqueTip') }}
+            {{ config('CliqueTip', 'CliqueTip') }}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
