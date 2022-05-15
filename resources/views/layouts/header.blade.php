@@ -37,6 +37,13 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('home')}}">
+                                {{ __('Home') }}
+                            </a>
+                        <a class="dropdown-item" href="/user">
+                                {{ __('User Profile') }}
+                            </a>
+                       
                             <a class="dropdown-item" href="/chatroom">
                                 {{ __('Chat Room') }}
                             </a>
