@@ -65,6 +65,71 @@
 *::after {
   box-sizing: border-box;
 }
+/* Patrick Button for Cliqutip*/
+/* #eac145 */
+.btn-yellow {
+  color: #c5a133;
+  background-color: #eac145;
+  border-color: #eac145;
+}
+.btn-yellow:hover {
+  color: #fff;
+  background-color: #cfaa39;
+  border-color: #c5a133;
+}
+.btn-check:focus + .btn-yellow, .btn-yellow:focus {
+  color: #fff;
+  background-color: #cfaa39;
+  border-color: #c5a133;
+  box-shadow: 0 0 0 0.25rem #c5a133;
+}
+.btn-check:checked + .btn-yellow, .btn-check:active + .btn-yellow, .btn-yellow:active, .btn-yellow.active, .show > .btn-yellow.dropdown-toggle {
+  color: #fff;
+  background-color: #c5a133;
+  border-color: #b9972f;
+}
+.btn-check:checked + .btn-yellow:focus, .btn-check:active + .btn-yellow:focus, .btn-yellow:active:focus, .btn-yellow.active:focus, .show > .btn-yellow.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #c5a133;
+}
+.btn-yellow:disabled, .btn-yellow.disabled {
+  color: #fff;
+  background-color: #eac145;
+  border-color: #eac145;
+}
+
+/* #F8FAFC */
+.btn-cancel {
+  color: #fff;
+  background-color: #F8FAFC;
+  border-color: #F8FAFC;
+}
+.btn-cancel:hover {
+  color: #fff;
+  background-color: #ebecee;
+  border-color: #e3e4e6;
+}
+.btn-check:focus + .btn-cancel, .btn-cancel:focus {
+  color: #fff;
+  background-color: #ebecee;
+  border-color: #e3e4e6;
+  box-shadow: 0 0 0 0.25rem #d8d9db;
+}
+.btn-check:checked + .btn-cancel, .btn-check:active + .btn-cancel, .btn-cancel:active, .btn-cancel.active, .show > .btn-cancel.dropdown-toggle {
+  color: #fff;
+  background-color: #e3e4e6;
+  border-color: #d8d9db;
+}
+.btn-check:checked + .btn-cancel:focus, .btn-check:active + .btn-cancel:focus, .btn-cancel:active:focus, .btn-cancel.active:focus, .show > .btn-cancel.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem #d8d9db;
+}
+.btn-cancel:disabled, .btn-cancel.disabled {
+  color: #fff;
+  background-color: #F8FAFC;
+  border-color: #F8FAFC;
+}
+
+/* Patrick Button for Cliqutip*/
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {

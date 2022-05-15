@@ -1,4 +1,5 @@
 <header>
+<<<<<<< HEAD
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <img src="{{asset('images/cliquetip-logo.png')}}" width="60" height="70" alt="CliqueTip Logo">
@@ -8,6 +9,17 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
+=======
+<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <div class="container">
+        <img src="{{asset('images/cliquetip-logo.png')}}" width="60" height="70" alt="CliqueTip Logo">
+        <a class="navbar-brand" href="{{ url('/home') }}">
+            {{ config('CliqueTip', 'CliqueTip') }}
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+>>>>>>> 331cccf68acf66d4882393542ac08436c71380b1
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
@@ -37,10 +49,20 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+<<<<<<< HEAD
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Notifications') }}
                             </a>
+=======
+                        <a class="dropdown-item" href="{{ route('home')}}">
+                                {{ __('Home') }}
+                            </a>
+                        <a class="dropdown-item" href="/user">
+                                {{ __('User Profile') }}
+                            </a>
+                       
+>>>>>>> 331cccf68acf66d4882393542ac08436c71380b1
                             <a class="dropdown-item" href="/chatroom">
                                 {{ __('Chat Room') }}
                             </a>

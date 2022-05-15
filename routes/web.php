@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +20,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('home',[PostController::class,'post'])->name('home');
+Route::get('post/{id}', [PostController::class, 'comment'])->name('commentshow');
+Route::post('post',[PostController::class,'addPost'])->name('addpost');
+
+
+
+Route::get('user', [App\Http\Controllers\HomeController::class, 'index'])->name('user');
+
+Route::post('/updateProfile', [App\Http\Controllers\HomeController::class, 'updateProfile'])->name('updateProfile');
+
 
